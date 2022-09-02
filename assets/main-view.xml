@@ -11,7 +11,7 @@
         </scrollview>
     </box>
 
-    <button text="Close" horizontalAlign="center" style="margin-top: 20px; font-size: 16px;" />
+    <button text="Close" horizontalAlign="center" style="margin-top: 20px; font-size: 16px;" onclick="Sys.exit(0);" />
     <button text="Open Bug Report Form" horizontalAlign="center" style="margin-top: 20px; font-size: 16px;" onclick="Sys.command('start', ['https://github.com/Turbine-Software/FNFSharp/issues/new/choose'])" />
     <button text="Restart FNF#" horizontalAlign="center" style="margin-top: 20px; font-size: 16px;" onclick="Sys.command('start', ['..\\Funkin.exe'])" />
 </vbox>

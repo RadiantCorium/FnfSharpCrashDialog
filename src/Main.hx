@@ -1,5 +1,6 @@
 package ;
 
+import lime.app.Application;
 import haxe.ui.components.Label;
 import haxe.ui.macros.ComponentMacros;
 import haxe.ui.core.Component;
@@ -9,6 +10,8 @@ class Main {
     static var args:Array<String> = Sys.args();
 
     public static function main() {
+        Application.current.window.title = "FNF# Crashed!";
+
         var app = new HaxeUIApp();
 
         app.ready(function() {
