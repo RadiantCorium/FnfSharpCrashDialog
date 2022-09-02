@@ -31,7 +31,7 @@
 	<set name="no-custom-backend" />
 	<set name="BUILD_DIR" value="build/flixel" />
 	<classpath name="src" />
-	<assets path="assets" include="*" />
+	<assets path="assets" include="*" embed="true" />
 	
 	<!--------------------------------LIBRARIES------------------------------------->
 		

@@ -1,5 +1,6 @@
 package ;
 
+import sys.io.File;
 import lime.app.Application;
 import haxe.ui.components.Label;
 import haxe.ui.macros.ComponentMacros;
@@ -18,11 +19,21 @@ class Main {
             var mainView:Component = ComponentMacros.buildComponent("assets/main-view.xml");
             app.addComponent(mainView);
 
+            var fileStr = File.getContent(args[0]);
+            var lines = fileStr.split("\n");
+
             var errorLabel:Label = mainView.findComponent("errorLabel", Label);
-            errorLabel.text = "ERROR: " + args[0];
+            errorLabel.text = "ERROR: " + lines[0].split(":")[1];
+
+            var stacktrace = "";
+
+            for (i in 3...lines.length)
+            {
+                stacktrace += lines[i] + "\n";
+            }
 
             var stacktraceLabel:Label = mainView.findComponent("stacktraceLabel", Label);
-            stacktraceLabel.text = args[1];
+            stacktraceLabel.text = stacktrace;
 
             app.start();
         });

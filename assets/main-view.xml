@@ -3,15 +3,15 @@
 
     <label id="errorLabel" text="ERROR: %PLACEHOLDER%" style="color: #ffffff; font-size: 32px;" horizontalAlign="center" />
 
-    <box width="80%" height="70%" horizontalAlign="center" style="background-color: #232323; margin-top: 10px;">
+    <box width="80%" height="145%" horizontalAlign="center" style="background-color: #232323; margin-top: 10px;">
         <label text="Stack Trace" style="color: #ffffff; font-size: 16px; padding-top: 10px" horizontalAlign="center" />
 
-        <scrollview style="margin-top: 45px; background-color: #141414" height="100%" width="100%">
+        <scrollview style="margin-top: 45px; background-color: #141414" height="125%" width="100%">
             <label id="stacktraceLabel" style="color: #ffffff;" text="Totally real traceback\nAt line 14789 of File.hx\ndingus\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu\nashdjksfsdhiu" />
         </scrollview>
     </box>
 
-    <button text="Close" horizontalAlign="center" style="margin-top: 20px; font-size: 16px;" onclick="Sys.exit(0);" />
-    <button text="Open Bug Report Form" horizontalAlign="center" style="margin-top: 20px; font-size: 16px;" onclick="Sys.command('start', ['https://github.com/Turbine-Software/FNFSharp/issues/new/choose'])" />
-    <button text="Restart FNF#" horizontalAlign="center" style="margin-top: 20px; font-size: 16px;" onclick="Sys.command('start', ['..\\Funkin.exe'])" />
+    <button text="Close" horizontalAlign="center" style="margin-top: 45px; font-size: 16px;" onclick="Sys.exit(0);" />
+    <button text="Open Bug Report Form" horizontalAlign="center" style="margin-top: 45px; font-size: 16px;" onclick="Sys.command('start', ['https://github.com/Turbine-Software/FNFSharp/issues/new/choose'])" />
+    <button text="Restart FNF#" horizontalAlign="center" style="margin-top: 45px; font-size: 16px;" onclick="Sys.command('start', ['.\\Funkin.exe'])" />
 </vbox>
